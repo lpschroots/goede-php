@@ -1,23 +1,22 @@
-<?php 
+<?php
 date_default_timezone_set("Europe/Amsterdam");
-$time = date("H:i:s");
+$date = date("H:i");
+$hour = date('H');
+$minute = date('i');
 
-	if ($hour >= "6" && $time <= "12"){
-		echo "Good Morning!";
-		$image = "backgrounds/morning.png"
-	else if ($hour >= "12" && $time <= "18"){
-		echo "Good Afternoon!";
-		$image = "backgrounds/afternoon.png"
-	} 
-	else if ($hour >= "18" && $time <= "23"){
-		echo "Good Evening!";
-		$image = "backgrounds/evening.png"
-	} 
-	else ($hour >= "23" && $time <= "6"){
-		echo "Good Night!";
-		$image = "backgrounds/night.png"
+	if ($hour <= 11.59){
+		$greeting = "Goede morgen!";
+		$time = "morning";
+	} elseif ($hour <= 17.59){
+		$time = "afternoon";
+		$greeting = "Goede middag!";
+	} elseif ($hour <= 23.59){
+		$time = "evening";
+		$greeting = "Goede avond!";
+	} elseif ($hour <= 5.59){
+		$time = "night";
+		$greeting = "Goede nacht!";
 	}
-
 ?>
 
 <!DOCTYPE html>
@@ -25,11 +24,11 @@ $time = date("H:i:s");
 <head>
 	<title>Welkom!</title>
 </head>
-<body
+<link rel="stylesheet" type="text/css" href="style.css">
+<body class="<?=$time?>">
 
-<?php
-echo $time;
-?>
+<h1><?=$greeting?></h1>
+<p>Het is nu <?=$date?></p>
 
 </body>
 </html>

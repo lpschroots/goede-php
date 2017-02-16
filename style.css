@@ -1,0 +1,39 @@
+.morning{
+	background: url('backgrounds/morning.png');
+	background-repeat: no-repeat;
+	background-size: 129%;
+}
+
+.afternoon{
+	background: url('backgrounds/afternoon.png');
+	background-repeat: no-repeat;
+	background-size: 129%;
+}
+
+.evening{
+	background: url('backgrounds/evening.png');
+	background-repeat: no-repeat;
+	background-size: 129%;
+}
+
+.night{
+	background: url('backgrounds/night.png');
+	background-repeat: no-repeat;
+	background-size: 129%;
+}
+
+h1{
+	font-family: 'Rockwell', cursive;
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	padding-top: 270px;
+	margin: auto;
+}
+
+p{
+	font-family: 'Rockwell', cursive;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
