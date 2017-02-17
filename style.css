@@ -13,7 +13,7 @@
 .evening{
 	background: url('backgrounds/evening.png');
 	background-repeat: no-repeat;
-	background-size: fill%;
+	background-size: fill;
 }
 
 .night{
