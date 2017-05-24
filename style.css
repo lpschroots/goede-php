@@ -1,37 +1,33 @@
 .morning{
 	background: url('backgrounds/morning.png');
-	background-repeat: no-repeat;
-	background-size: fill;
+	background-size: 90%;
 }
 
 .afternoon{
 	background: url('backgrounds/afternoon.png');
-	background-repeat: no-repeat;
-	background-size: fill;
+	background-size: 90%;
 }
 
 .evening{
 	background: url('backgrounds/evening.png');
-	background-repeat: no-repeat;
-	background-size: fill;
+	background-size: 90%;
 }
 
 .night{
 	background: url('backgrounds/night.png');
-	background-repeat: no-repeat;
-	background-size: fill;
+	background-size: 90%;
 }
 
 h1{
 	font-family: Comic, cursive;
-	font-size: 60px;
+	font-size: 70px;
 	color: white;
 	text-align: center;
-	padding-top: 270px;
+	padding-top: 260px;
 	margin: auto;
 }
 
-p{
+h2{
 	font-family: Comic, cursive;
 	font-size: 50px;
 	color: white;

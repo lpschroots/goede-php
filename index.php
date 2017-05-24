@@ -6,15 +6,15 @@ $minute = date('i');
 
 	if ($hour <= 11.59){
 		$greeting = "Goede morgen!";
-		$time = "morning";
+		$image = "backgrounds/morning.png";
 	} elseif ($hour <= 17.59){
-		$time = "afternoon";
-		$greeting = "Goede middag!";
+		$greeting = "Goede Middag!";
+		$image = "backgrounds/afternoon.png";
 	} elseif ($hour <= 23.59){
-		$time = "evening";
+		$image = "backgrounds/evening.png";
 		$greeting = "Goede avond!";
 	} elseif ($hour <= 5.59){
-		$time = "night";
+		$image = "backgrounds/night.png";
 		$greeting = "Goede nacht!";
 	}
 ?>
@@ -25,10 +25,10 @@ $minute = date('i');
 	<title>Welkom!</title>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<body class="<?=$time?>">
+<body style="background-size: 90%; background-image: url(<?php echo $image?>)">
 
 <h1><?=$greeting?></h1>
-<p>Het is nu <?=$date?></p>
+<h2>Het is nu <?=$date?></h2>
 
 </body>
 </html>
